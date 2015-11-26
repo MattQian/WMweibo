@@ -15,6 +15,11 @@
 		93C10FAD1BFF0CEE00F992C0 /* WMMessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C10FA71BFF0CEE00F992C0 /* WMMessageCenterViewController.m */; };
 		93C10FAE1BFF0CEE00F992C0 /* WMDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C10FA91BFF0CEE00F992C0 /* WMDiscoverViewController.m */; };
 		93C10FAF1BFF0CEE00F992C0 /* WMProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C10FAB1BFF0CEE00F992C0 /* WMProfileViewController.m */; };
+		93C6BB571C072F3B008D0243 /* WMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C6BB561C072F3B008D0243 /* WMTabBarViewController.m */; };
+		93C6BB5B1C073D64008D0243 /* WMTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C6BB591C073D64008D0243 /* WMTest1ViewController.m */; };
+		93C6BB5C1C073D64008D0243 /* WMTest1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C6BB5A1C073D64008D0243 /* WMTest1ViewController.xib */; };
+		93C6BB601C07602A008D0243 /* WMTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C6BB5E1C07602A008D0243 /* WMTest2ViewController.m */; };
+		93C6BB611C07602A008D0243 /* WMTest2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C6BB5F1C07602A008D0243 /* WMTest2ViewController.xib */; };
 		93E528921BFF0E63000D8067 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E528911BFF0E63000D8067 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +52,14 @@
 		93C10FAA1BFF0CEE00F992C0 /* WMProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMProfileViewController.h; sourceTree = "<group>"; };
 		93C10FAB1BFF0CEE00F992C0 /* WMProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMProfileViewController.m; sourceTree = "<group>"; };
 		93C10FB01BFF0CF900F992C0 /* WMweibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMweibo.pch; sourceTree = "<group>"; };
+		93C6BB551C072F3B008D0243 /* WMTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBarViewController.h; sourceTree = "<group>"; };
+		93C6BB561C072F3B008D0243 /* WMTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBarViewController.m; sourceTree = "<group>"; };
+		93C6BB581C073D64008D0243 /* WMTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTest1ViewController.h; sourceTree = "<group>"; };
+		93C6BB591C073D64008D0243 /* WMTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTest1ViewController.m; sourceTree = "<group>"; };
+		93C6BB5A1C073D64008D0243 /* WMTest1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMTest1ViewController.xib; sourceTree = "<group>"; };
+		93C6BB5D1C07602A008D0243 /* WMTest2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTest2ViewController.h; sourceTree = "<group>"; };
+		93C6BB5E1C07602A008D0243 /* WMTest2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTest2ViewController.m; sourceTree = "<group>"; };
+		93C6BB5F1C07602A008D0243 /* WMTest2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMTest2ViewController.xib; sourceTree = "<group>"; };
 		93E528911BFF0E63000D8067 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +102,8 @@
 		93C10F7D1BFF0C8100F992C0 /* WMweibo */ = {
 			isa = PBXGroup;
 			children = (
+				93C6BB551C072F3B008D0243 /* WMTabBarViewController.h */,
+				93C6BB561C072F3B008D0243 /* WMTabBarViewController.m */,
 				93C10F821BFF0C8100F992C0 /* AppDelegate.h */,
 				93C10F831BFF0C8100F992C0 /* AppDelegate.m */,
 				93C10FA41BFF0CEE00F992C0 /* WMHomeViewController.h */,
@@ -99,6 +114,12 @@
 				93C10FA91BFF0CEE00F992C0 /* WMDiscoverViewController.m */,
 				93C10FAA1BFF0CEE00F992C0 /* WMProfileViewController.h */,
 				93C10FAB1BFF0CEE00F992C0 /* WMProfileViewController.m */,
+				93C6BB581C073D64008D0243 /* WMTest1ViewController.h */,
+				93C6BB591C073D64008D0243 /* WMTest1ViewController.m */,
+				93C6BB5A1C073D64008D0243 /* WMTest1ViewController.xib */,
+				93C6BB5D1C07602A008D0243 /* WMTest2ViewController.h */,
+				93C6BB5E1C07602A008D0243 /* WMTest2ViewController.m */,
+				93C6BB5F1C07602A008D0243 /* WMTest2ViewController.xib */,
 				93C10F7E1BFF0C8100F992C0 /* Supporting Files */,
 			);
 			path = WMweibo;
@@ -214,7 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93C10F8F1BFF0C8100F992C0 /* LaunchScreen.xib in Resources */,
+				93C6BB5C1C073D64008D0243 /* WMTest1ViewController.xib in Resources */,
 				93E528921BFF0E63000D8067 /* Images.xcassets in Resources */,
+				93C6BB611C07602A008D0243 /* WMTest2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +260,10 @@
 				93C10F811BFF0C8100F992C0 /* main.m in Sources */,
 				93C10FAE1BFF0CEE00F992C0 /* WMDiscoverViewController.m in Sources */,
 				93C10FAF1BFF0CEE00F992C0 /* WMProfileViewController.m in Sources */,
+				93C6BB571C072F3B008D0243 /* WMTabBarViewController.m in Sources */,
+				93C6BB5B1C073D64008D0243 /* WMTest1ViewController.m in Sources */,
 				93C10FAD1BFF0CEE00F992C0 /* WMMessageCenterViewController.m in Sources */,
+				93C6BB601C07602A008D0243 /* WMTest2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
