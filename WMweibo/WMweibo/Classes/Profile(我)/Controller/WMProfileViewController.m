@@ -1,29 +1,28 @@
 //
-//  WMHomeViewController.m
+//  WMProfileViewController.m
 //  WM微博
 //
 //  Created by 张靖乾 on 15-11-20.
 //  Copyright (c) 2015年 ZJQ. All rights reserved.
 //
 
-#import "WMHomeViewController.h"
-
-@interface WMHomeViewController ()
+#import "WMProfileViewController.h"
+#import "WMTest1ViewController.h"
+@interface WMProfileViewController ()
 
 @end
 
-@implementation WMHomeViewController
+@implementation WMProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:0 target:self action:@selector(setting)];
 }
-
+-(void)setting{
+    WMTest1ViewController *test1 = [[WMTest1ViewController alloc] init];
+    [self.navigationController pushViewController:test1 animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

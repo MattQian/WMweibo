@@ -11,6 +11,8 @@
 #import "WMMessageCenterViewController.h"
 #import "WMDiscoverViewController.h"
 #import "WMProfileViewController.h"
+#import "WMNavigationController.h"
+
 @interface WMTabBarViewController ()
 
 @end
@@ -57,7 +59,7 @@
     childVc.view.backgroundColor = WMRandomColor;
     
     //先给外面传来的小控制器  包装  一个导航控制器
-    UINavigationController *nav = [[UINavigationController alloc ] initWithRootViewController:childVc];
+    WMNavigationController *nav = [[WMNavigationController alloc ] initWithRootViewController:childVc];
     //添加为子控制器
     [self addChildViewController:nav];
 }

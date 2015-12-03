@@ -1,34 +1,37 @@
 //
-//  WMProfileViewController.m
+//  WMHomeViewController.m
 //  WM微博
 //
 //  Created by 张靖乾 on 15-11-20.
 //  Copyright (c) 2015年 ZJQ. All rights reserved.
 //
 
-#import "WMProfileViewController.h"
+#import "WMHomeViewController.h"
 
-@interface WMProfileViewController ()
+@interface WMHomeViewController ()
 
 @end
 
-@implementation WMProfileViewController
+@implementation WMHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(friendSearch) image:@"navigationbar_friendsearch" highImage:@"navigationbar_friendsearch_highlighted"];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(pop) image:@"navigationbar_pop" highImage:@"navigationbar_pop_highlighted"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)friendSearch{
+    NSLog(@"friendSearch");
+}
+-(void)pop{
+    NSLog(@"pop");
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
