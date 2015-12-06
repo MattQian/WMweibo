@@ -18,6 +18,8 @@
     [super viewDidLoad];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"写私信" style:UIBarButtonItemStylePlain target:self action:@selector(composeMsg)];
+    //这个item不能点击
+    self.navigationItem.rightBarButtonItem.enabled = NO;
 }
 -(void)composeMsg{
     NSLog(@"composeMsg");
@@ -31,8 +33,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    //这个item不能点击
-    self.navigationItem.rightBarButtonItem.enabled = NO;
+   
 }
 #pragma mark - Table view data source
 

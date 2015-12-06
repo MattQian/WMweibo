@@ -7,7 +7,7 @@
 //
 
 #import "WMDiscoverViewController.h"
-
+#import "WMSearchBar.h"
 @interface WMDiscoverViewController ()
 
 @end
@@ -17,11 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    WMSearchBar *searchBar = [WMSearchBar searchBar];
+    searchBar.width = 335;
+    searchBar.height = 30;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.titleView = searchBar;
+    
 }
 
 - (void)didReceiveMemoryWarning {

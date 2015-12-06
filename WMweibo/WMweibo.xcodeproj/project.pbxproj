@@ -21,8 +21,12 @@
 		9366B0E11C0D8EF800804CFE /* WMTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9366B0D41C0D8EF800804CFE /* WMTest2ViewController.m */; };
 		9366B0E21C0D8EF800804CFE /* WMTest2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9366B0D51C0D8EF800804CFE /* WMTest2ViewController.xib */; };
 		9366B0E81C0D947000804CFE /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9366B0E71C0D947000804CFE /* UIBarButtonItem+Extension.m */; };
+		93AD07131C10328A00D9E2B1 /* WMSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AD07121C10328A00D9E2B1 /* WMSearchBar.m */; };
+		93AD07161C11793800D9E2B1 /* WMDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AD07151C11793800D9E2B1 /* WMDropdownMenu.m */; };
+		93AD07201C1182F700D9E2B1 /* WMTitleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AD071F1C1182F700D9E2B1 /* WMTitleVC.m */; };
 		93C10F8F1BFF0C8100F992C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C10F8D1BFF0C8100F992C0 /* LaunchScreen.xib */; };
 		93C10F9B1BFF0C8200F992C0 /* WMweiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C10F9A1BFF0C8200F992C0 /* WMweiboTests.m */; };
+		93E470AA1C143EBD008AA0AD /* WMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E470A91C143EBD008AA0AD /* WMTabBar.m */; };
 		93E528921BFF0E63000D8067 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E528911BFF0E63000D8067 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +66,12 @@
 		9366B0D51C0D8EF800804CFE /* WMTest2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMTest2ViewController.xib; sourceTree = "<group>"; };
 		9366B0E61C0D947000804CFE /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		9366B0E71C0D947000804CFE /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		93AD07111C10328A00D9E2B1 /* WMSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSearchBar.h; sourceTree = "<group>"; };
+		93AD07121C10328A00D9E2B1 /* WMSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSearchBar.m; sourceTree = "<group>"; };
+		93AD07141C11793800D9E2B1 /* WMDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDropdownMenu.h; sourceTree = "<group>"; };
+		93AD07151C11793800D9E2B1 /* WMDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMDropdownMenu.m; sourceTree = "<group>"; };
+		93AD071E1C1182F700D9E2B1 /* WMTitleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTitleVC.h; sourceTree = "<group>"; };
+		93AD071F1C1182F700D9E2B1 /* WMTitleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTitleVC.m; sourceTree = "<group>"; };
 		93C10F7B1BFF0C8100F992C0 /* WMweibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMweibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C10F7F1BFF0C8100F992C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C10F8E1BFF0C8100F992C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -69,6 +79,8 @@
 		93C10F991BFF0C8200F992C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C10F9A1BFF0C8200F992C0 /* WMweiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMweiboTests.m; sourceTree = "<group>"; };
 		93C10FB01BFF0CF900F992C0 /* WMweibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMweibo.pch; sourceTree = "<group>"; };
+		93E470A81C143EBD008AA0AD /* WMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBar.h; sourceTree = "<group>"; };
+		93E470A91C143EBD008AA0AD /* WMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBar.m; sourceTree = "<group>"; };
 		93E528911BFF0E63000D8067 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +153,7 @@
 			children = (
 				9366B0AE1C0D8EF800804CFE /* Controller */,
 				9366B0B11C0D8EF800804CFE /* Model */,
-				9366B0B21C0D8EF800804CFE /* View */,
+				93AD071D1C1182CD00D9E2B1 /* View */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -160,13 +172,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		9366B0B21C0D8EF800804CFE /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		9366B0B31C0D8EF800804CFE /* Main(主要) */ = {
@@ -231,6 +236,12 @@
 		9366B0C21C0D8EF800804CFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93AD07111C10328A00D9E2B1 /* WMSearchBar.h */,
+				93AD07121C10328A00D9E2B1 /* WMSearchBar.m */,
+				93AD07141C11793800D9E2B1 /* WMDropdownMenu.h */,
+				93AD07151C11793800D9E2B1 /* WMDropdownMenu.m */,
+				93E470A81C143EBD008AA0AD /* WMTabBar.h */,
+				93E470A91C143EBD008AA0AD /* WMTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +323,16 @@
 				9366B0D51C0D8EF800804CFE /* WMTest2ViewController.xib */,
 			);
 			path = "Temp(临时)";
+			sourceTree = "<group>";
+		};
+		93AD071D1C1182CD00D9E2B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93AD071E1C1182F700D9E2B1 /* WMTitleVC.h */,
+				93AD071F1C1182F700D9E2B1 /* WMTitleVC.m */,
+			);
+			name = View;
+			path = Model/View;
 			sourceTree = "<group>";
 		};
 		93C10F721BFF0C8100F992C0 = {
@@ -474,14 +495,18 @@
 				9366B0D61C0D8EF800804CFE /* WMDiscoverViewController.m in Sources */,
 				9366B0D71C0D8EF800804CFE /* WMHomeViewController.m in Sources */,
 				9366B0DD1C0D8EF800804CFE /* WMMessageCenterViewController.m in Sources */,
+				93AD07131C10328A00D9E2B1 /* WMSearchBar.m in Sources */,
+				93E470AA1C143EBD008AA0AD /* WMTabBar.m in Sources */,
 				9366B0DF1C0D8EF800804CFE /* WMTest1ViewController.m in Sources */,
 				9366B0E11C0D8EF800804CFE /* WMTest2ViewController.m in Sources */,
 				9366B0DE1C0D8EF800804CFE /* WMProfileViewController.m in Sources */,
 				9366B0DA1C0D8EF800804CFE /* WMNavigationController.m in Sources */,
+				93AD07161C11793800D9E2B1 /* WMDropdownMenu.m in Sources */,
 				9366B0D91C0D8EF800804CFE /* UIView+Extension.m in Sources */,
 				9366B0E81C0D947000804CFE /* UIBarButtonItem+Extension.m in Sources */,
 				9366B0DC1C0D8EF800804CFE /* main.m in Sources */,
 				9366B0D81C0D8EF800804CFE /* AppDelegate.m in Sources */,
+				93AD07201C1182F700D9E2B1 /* WMTitleVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

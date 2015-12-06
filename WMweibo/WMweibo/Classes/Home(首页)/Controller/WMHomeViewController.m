@@ -7,7 +7,8 @@
 //
 
 #import "WMHomeViewController.h"
-
+#import "WMDropdownMenu.h"
+#import "WMTitleVC.h"
 @interface WMHomeViewController ()
 
 @end
@@ -20,6 +21,40 @@
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(friendSearch) image:@"navigationbar_friendsearch" highImage:@"navigationbar_friendsearch_highlighted"];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(pop) image:@"navigationbar_pop" highImage:@"navigationbar_pop_highlighted"];
+    
+    
+    UIButton *titleButton = [[UIButton alloc] init];
+    titleButton.width = 150;
+    titleButton.height = 30;
+//    titleButton.backgroundColor = WMRandomColor;
+    
+    //设置图片和文字
+    [titleButton setTitle:@"首页" forState:UIControlStateNormal];
+    [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+//    titleButton.imageView.backgroundColor = WMRandomColor;
+//    titleButton.titleLabel.backgroundColor = WMRandomColor;
+    
+    titleButton.imageEdgeInsets = UIEdgeInsetsMake(0, 70, 0, 0);
+    titleButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 50);
+    
+    
+    //监听标题点击
+    [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.titleView = titleButton;
+}
+
+//监听点击标题
+-(void)titleClick:(UIButton *)titileButton
+{
+    //创建下拉菜单
+    WMDropdownMenu *menu = [WMDropdownMenu menu];
+    WMTitleVC *vc1 = [[WMTitleVC alloc] init];
+    vc1.view.height = 132;
+    vc1.view.width = 150;
+    //显示
+    menu.contentVC = vc1;
+    [menu showFrom:titileButton];
 }
 
 - (void)didReceiveMemoryWarning {

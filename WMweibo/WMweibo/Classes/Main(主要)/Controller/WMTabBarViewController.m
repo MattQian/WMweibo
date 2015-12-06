@@ -12,8 +12,9 @@
 #import "WMDiscoverViewController.h"
 #import "WMProfileViewController.h"
 #import "WMNavigationController.h"
+#import "WMTabBar.h"
 
-@interface WMTabBarViewController ()
+@interface WMTabBarViewController ()<WMTabBarDelegate>
 
 @end
 
@@ -22,12 +23,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //3.设置子控制器
+    //1.设置子控制器
     WMHomeViewController *home = [[WMHomeViewController alloc] init];
     [self addChildVc:home title:@"首页" image:@"tabbar_home" selectedImage:@"tabbar_home_selected"];
     
     WMMessageCenterViewController *messageCenter = [[WMMessageCenterViewController alloc] init];
     [self addChildVc:messageCenter title:@"消息" image:@"tabbar_message_center" selectedImage:@"tabbar_message_center_selected"];
+    
     
     WMDiscoverViewController *discover = [[WMDiscoverViewController alloc] init];
     [self addChildVc:discover title:@"发现" image:@"tabbar_discover" selectedImage:@"tabbar_discover_selected"];
@@ -35,6 +37,14 @@
     WMProfileViewController *profile = [[WMProfileViewController alloc] init];
     [self addChildVc:profile title:@"我" image:@"tabbar_profile" selectedImage:@"tabbar_profile_selected"];
     
+    //2.更改系统自带的tabbar
+    //self.tabBar = [[WMTabBar alloc] init]; tabbar 只读属性
+    WMTabBar *tabBar = [[WMTabBar alloc] init];
+    tabBar.delegate = self;
+    [self setValue:tabBar forKeyPath:@"tabBar"];
+    
+    //3.添加一个按钮到tabbar中
+   
     
 }
 
@@ -56,7 +66,8 @@
     
     [childVc.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     [childVc.tabBarItem setTitleTextAttributes:selectTextAttrs forState:UIControlStateSelected];
-    childVc.view.backgroundColor = WMRandomColor;
+  //不需要，为了防止一开始就创建各个控制器
+    // childVc.view.backgroundColor = WMRandomColor;
     
     //先给外面传来的小控制器  包装  一个导航控制器
     WMNavigationController *nav = [[WMNavigationController alloc ] initWithRootViewController:childVc];
@@ -64,5 +75,10 @@
     [self addChildViewController:nav];
 }
 
-
+#pragma mark -WMTabBarDelegate代理方法
+-(void)tabBarDidClickButton:(WMTabBar *)tabBar{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor redColor];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 @end
